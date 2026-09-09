@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Traffic Violation Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>🚦 AI Traffic Rule Violation Detection</h1>
+
+    <div class="upload-box">
+        <input type="file" id="videoInput" accept="video/*">
+        <button onclick="uploadVideo()">Upload & Detect</button>
+    </div>
+
+    <div class="preview-section">
+        <h3>Video Preview</h3>
+        <video id="videoPreview" controls></video>
+    </div>
+
+    <div class="result-section">
+        <h3>Detection Results</h3>
+        <div id="results"></div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+Representation of Lists in Prolog:-                                      
+A list in Prolog is a group of elements written in square brackets, 
+and it can be divided into Head (first element) and Tail (remaining elements).
+
